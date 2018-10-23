@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "module": "esnext",
+        "target": "es6",
+        "lib": [ "es7","dom" ],
+        "sourceMap": false,
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "noEmitOnError": true
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/vap"
+    ]
+}

@@ -1,0 +1,1 @@
+export { default as DivChart } from './divChart';

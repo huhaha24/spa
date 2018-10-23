@@ -1,0 +1,416 @@
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 5px solid transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+  }
+  ::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2) inset;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-size: 10pt;
+  }
+  
+  ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd {
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    border: none;
+    vertical-align: middle;
+  }
+  
+  a {
+    color: #000000;
+  }
+  a:hover {
+    color: #000000;
+  }
+  
+  a:focus {
+    outline: none;
+    -moz-outline: none;
+    color: #000000;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: BenderRegular, Mircosoft Yahei, Arial, Helvetica, Verdana, sans-serif;
+    color: #000000;
+  }
+  
+  /* html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../../images/two/bg.png") no-repeat center center;
+    background-size: 100% 100%;
+  } */
+  
+  .header {
+    z-index: 1;
+  }
+  .header-left {
+    position: absolute;
+    left: 60px;
+    background: url("../../images/two/logo.png") no-repeat 5% center;
+    border-left: 3px solid #2749C5;
+    padding-left: 78px;
+    color: #ffffff;
+    width: 500px;
+    height: 70px;
+  }
+  .header-left > .title-top {
+    font-size: 30px;
+  }
+  .header-left > .title-bottom > div {
+    float: left;
+    font-size: 18px;
+  }
+  .header-left > .title-bottom > div:nth-child(1) {
+    width: 180px;
+  }
+  .header-right {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  .header-right-btn {
+    float: left;
+    margin-left: 30px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #223c7a;
+    font-size: 16px;
+    color: #b0bfe1;
+    cursor: pointer;
+    width: 120px;
+    height: 38px;
+  }
+  .header-right-btn:hover, .header-right-btn.selected {
+    color: #ffffff;
+    background: #223c7a;
+  }
+  
+  .sysbg {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(14, 23, 38, 0.8);
+    z-index: 999999;
+  }
+  .sysbg > .center {
+    position: absolute;
+    left: 35px;
+    top: 170px;
+    right: 0;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sysbg > .center .box {
+    position: relative;
+    margin: 20px;
+    border-radius: 5px;
+    background: #2a3e94;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    width: 420px;
+    height: 287px;
+  }
+  .sysbg > .center .box > img {
+    margin: 10px;
+    transition: all 0.5s;
+    width: 400px;
+    height: 225px;
+  }
+  .sysbg > .center .box:hover {
+    color: #f00;
+  }
+  .sysbg > .center .box:hover > img {
+    transform: scale(1.05);
+  }
+  
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .title-cn {
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .title-en {
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .sub-title {
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+  }
+  
+  .sub-body {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: hidden;
+  }
+  .sub-body > .ulList > li {
+    font-size: 14px;
+    color: #0091c7;
+    height: 30px;
+    line-height: 30px;
+  }
+  .sub-body > .ulList > li div {
+    font-size: 14px;
+    display: inline-block;
+  }
+  .sub-body > .ulList > li div.time {
+    display: inline-block;
+    width: 120px;
+  }
+  .sub-body > .ulList > li div.midTime {
+    display: inline-block;
+    width: 90px;
+  }
+  .sub-body > .ulList > li div.shortTime {
+    display: inline-block;
+    width: 40px;
+  }
+  .sub-body > .ulList > li div.ip {
+    width: 80px;
+  }
+  .sub-body > .ulList > li div.area {
+    width: 50px;
+  }
+  .sub-body > .ulList > li div.count {
+    width: 80px;
+  }
+  .sub-body > .ulList > li > img {
+    padding: 0 10px;
+  }
+  .sub-body > .ulList > li.error {
+    color: #f20909;
+  }
+  .sub-body > .ulList > li:hover {
+    background: rgba(25, 45, 99, 0.6);
+  }
+  .sub-body > .ulList > li > .newList {
+    width: 25px;
+    height: 15px;
+    color: #ffffff;
+    background: #c50645;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .grid {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .grid-header {
+    width: 100%;
+    height: 30px;
+  }
+  .grid-header .grid-sub-header {
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    background: #223e6b;
+    height: 30px;
+    line-height: 30px;
+  }
+  .grid-body {
+    width: 100%;
+    height: calc(100% - 30px);
+    background: rgba(21, 44, 85, 0.1);
+    overflow: hidden;
+  }
+  .grid-body .grid-ul {
+    overflow: hidden;
+  }
+  .grid-body .grid-ul .grid-li {
+    height: 30px;
+  }
+  .grid-body .grid-ul .grid-li-body {
+    float: left;
+    color: #0091c7;
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+  }
+  .grid-body .grid-ul .grid-li-body.grid-area {
+    color: #1dc862;
+  }
+  .grid-body .grid-ul .grid-li:hover {
+    background: rgba(21, 44, 85, 0.5);
+  }
+  .selfBar:nth-child(1) {
+    margin-top: 20px;
+  }
+  .selfBar {
+    width: 100%;
+    display: flex;
+  }
+  .selfBar > div {
+    float: left;
+    font-size: 14px;
+  }
+  .selfBar-name {
+    color: #ffffff;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .selfBar-ip {
+    color: #ffffff;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .selfBar-body {
+    margin: 10px 20px 0;
+    background: #12193e;
+    border-radius: 5px;
+    width: 400px;
+    height: 10px;
+  }
+  .selfBar-body-inner {
+    border-radius: 5px;
+    transition: width 0.5s;
+    width: 0;
+    height: 10px;
+  }
+  .selfBar-body-inner.blue {
+    background: linear-gradient(to right, #1b5fc1, #56ebfe);
+  }
+  .selfBar-body-inner.orange {
+    background: linear-gradient(to right, #c45602, #bebd01);
+  }
+  .selfBar-count {
+    color: #0091C7;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  .main-legend {
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 20px;
+    display: flex;
+    display: -webkit-flex;
+    z-index: 2;
+  }
+  .main-legend-block {
+    display: flex;
+    display: -webkit-flex;
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .main-legend-block-box {
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 20px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 2px;
+  }
+  .main-legend-block.curr .main-legend-block-box, .main-legend-block:hover .main-legend-block-box {
+    background: #1d85c5;
+  }
+  .main-legend-block.curr .main-legend-block-title, .main-legend-block:hover .main-legend-block-title {
+    color: #1d85c5;
+  }
+  .main-legend-block-title {
+    color: #ccc;
+  }
+  
+  .nodata {
+    padding-left: 10px;
+    color: #a5a2a2;
+  }
+  
+  .map-alarm {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    min-height: 90px;
+    background: url("/sap/images/one/title.png") no-repeat left top, rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(3.5% 1%, 95.16% 1%, 100% 4.83%, 100% 95.16%, 95.16% 100%, 4.83% 100%, 0% 94.16%, 0% 11%);
+    clip-path: polygon(3.5% 1%, 95.16% 1%, 100% 4.83%, 100% 95.16%, 95.16% 100%, 4.83% 100%, 0% 94.16%, 0% 11%);
+    cursor: default;
+    z-index: 2;
+  }
+  .map-alarm-title {
+    width: 115px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .map-alarm-location {
+    margin: 5px 20px;
+    padding-left: 20px;
+    color: #12A9DA;
+    font-size: 14px;
+    background: url("/sap/images/one/location.png") no-repeat left center;
+  }
+  .map-alarm-list {
+    margin: 5px 20px;
+    padding-left: 8px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .map-alarm-list span {
+    font-size: 16px;
+  }
+  .map-alarm-line {
+    display: none;
+    position: absolute;
+    width: 26px;
+    height: 20px;
+  }
+  .map-alarm-line line {
+    stroke: #7d7a86;
+    stroke-width: 1;
+  }
+  

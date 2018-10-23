@@ -1,0 +1,72 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add topojson
+
+PATH: 
+  C:\Ruby25-x64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk1.8.0_161\bin;D:\apache-tomcat-8.5.29-windows-x64\apache-tomcat-8.5.29\bin;D:\soft\mycat\bin;D:\soft\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\soft\thrift;C:\Program Files\dotnet\;C:\Python27;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\b\AppData\Local\Yarn\bin;C:\Users\b\AppData\Roaming\npm;C:\Program Files (x86)\VRV\CEMS\;C:\Program Files (x86)\VRV\CEMS\;C:\Program Files (x86)\VRV\CEMS\;C:\Program Files (x86)\VRV\CEMS\;C:\Program Files (x86)\VRV\CEMS\;
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\b\AppData\Local\Yarn\Cache\v1\npm-camelcase-1.2.1-9bb5304d2e0b56698b2c758b08a3eaa9daa58a39\index.js' -> 'E:\mycatDemo\web\node_modules\accord\node_modules\camelcase\index.js'
+
+npm manifest: 
+  {
+    "name": "web",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/d3": "^4.12.0",
+      "@types/echarts": "^0.0.12",
+      "@types/jquery": "^3.2.17",
+      "@types/lodash": "^4.14.92",
+      "@types/react": "^16.0.34",
+      "@types/react-dom": "^16.0.3",
+      "@types/three": "^0.89.2",
+      "@types/topojson": "^3.2.0",
+      "css-loader": "^0.28.8",
+      "gulp": "^3.9.1",
+      "gulp-concat": "^2.6.1",
+      "gulp-less": "^4.0.1",
+      "gulp-rename": "^1.4.0",
+      "html-loader": "^0.5.5",
+      "less": "^2.7.3",
+      "less-loader": "^4.0.5",
+      "style-loader": "^0.19.1",
+      "ts-loader": "^4.2.0",
+      "typescript": "^3.0.1",
+      "webpack": "^4.5.0",
+      "webpack-cli": "^2.0.14"
+    },
+    "dependencies": {
+      "antd": "^3.9.1",
+      "d3": "^4.12.2",
+      "echarts": "^4.0.4",
+      "jquery": "^3.2.1",
+      "lodash": "^4.17.4",
+      "nprogress": "^0.2.0",
+      "react": "^16.3.2",
+      "react-dom": "^16.3.2",
+      "three": "^0.89.0",
+      "topojson": "^3.0.2",
+      "vap": "^2.3.9"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

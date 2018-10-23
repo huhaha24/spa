@@ -1,0 +1,38 @@
+.v-item-selected{
+    filter: url(#f-shadow);
+}
+.v-item{
+    .v-area{
+        stroke-width: 0.5;
+        stroke: #cccccc;
+        fill:rgb(23,39,82);
+    }
+    .v-label{
+        fill:rgba(255,255,255,0.4);
+    }
+    &:hover{
+        .v-area{
+            fill:#244b93;
+        }
+        .v-label{
+            fill:rgba(255,255,255,0.8);
+        }
+    }
+
+}
+g.v-group-background{
+    pointer-events: none;
+}
+g.v-group-background path{
+    fill:transparent;
+    stroke: #ffffff;
+    stroke-opacity: 0.4;
+}
+.map-alarm-title {
+    width: 115px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #fff;
+}
